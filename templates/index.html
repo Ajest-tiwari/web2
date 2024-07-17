@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Bike Project</title>
+    </head>
+<body>
+<h2>Old Bike Price Prediction Project 😍</h2>
+<p>This is my bike price prediction project, where you can get price prediction of old bike.</p>
+ 
+<form action="{{ url_for('prediction') }}" method="post">
+    <label for="">Brand Name :   </label>
+    <select name="brand_name" id="fifth" required="required">
+        <option value="2" >Royal Enfield</option>
+        <option value="7">KTM</option>
+        <option value="1">Bajaj</option>
+        <option value="9">Harley-Davidson</option>
+        <option value="5">Yamaha</option>
+        <option value="4">Honda</option>
+        <option value="8">Suzuki</option>
+        <option value="6">TVS</option>
+        <option value="10">Kawasaki</option>
+        <option value="11">Hyosung</option>
+        <option value="13">Benelli</option>
+        <option value="12">Mahindra</option>
+        <option value="14">Triumph</option>
+        <option value="15">Ducati</option>
+        <option value="16">BMW</option>
+    </select><br><br>
+
+
+
+<label for="">Ownership   :      </label>
+    <select name="owner" id="">
+        <option value="1">First owner</option>
+        <option value="2">Second owner</option>
+        <option value="3">Third owner</option>
+        <option value="4">Fourth owner</option>
+
+    </select><br><br>
+
+
+
+<label for="">Kms_driven : </label>
+    <input type="text" name="kms_driven"> <br><br>
+
+    <label for="">age : </label>
+    <input type="text" name="age"> <br><br>
+
+    <label for="">power : </label>
+    <input type="text" name="power"> <br><br>
+
+
+    <button type="submit">SUBMIT</button>
+
+
+
+</form>
+
+
+</body>
+</html>
